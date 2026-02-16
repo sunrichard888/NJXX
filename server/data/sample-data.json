@@ -1,0 +1,87 @@
+{
+  "grades": [
+    {
+      "id": "grade-1",
+      "name": "一年级",
+      "level": 1,
+      "subjects": [
+        {
+          "id": "math-grade1",
+          "name": "数学",
+          "units": [
+            {
+              "id": "unit-1-1",
+              "title": "认识数字1-10",
+              "description": "学习基本的数字认知和计数",
+              "order": 1,
+              "keyPoints": [
+                {
+                  "id": "kp-1-1-1",
+                  "title": "数字的书写",
+                  "content": "学习正确书写数字1-10的方法",
+                  "difficulty": "easy",
+                  "media": [
+                    {
+                      "type": "image",
+                      "url": "/assets/images/number-writing.png",
+                      "caption": "数字书写示范"
+                    }
+                  ]
+                },
+                {
+                  "id": "kp-1-1-2", 
+                  "title": "数量对应",
+                  "content": "理解数字与实际数量的对应关系",
+                  "difficulty": "easy",
+                  "media": [
+                    {
+                      "type": "interactive",
+                      "url": "/demos/counting-objects.html",
+                      "caption": "互动计数练习"
+                    }
+                  ]
+                }
+              ],
+              "demos": [
+                {
+                  "id": "demo-1-1-1",
+                  "title": "数字歌谣",
+                  "type": "video",
+                  "sourceUrl": "https://example.com/number-song.mp4"
+                }
+              ],
+              "questions": [
+                {
+                  "id": "q-1-1-1",
+                  "type": "multiple-choice",
+                  "question": "下面哪个图片表示数字3？",
+                  "options": ["A. 🍎🍎", "B. 🍎🍎🍎", "C. 🍎🍎🍎🍎"],
+                  "correctAnswer": "B",
+                  "difficulty": "easy",
+                  "tags": ["counting", "basic"]
+                },
+                {
+                  "id": "q-1-1-2",
+                  "type": "fill-blank",
+                  "question": "请写出数字：___（三个苹果）",
+                  "correctAnswer": "3",
+                  "difficulty": "easy",
+                  "tags": ["writing", "counting"]
+                }
+              ],
+              "extensionQuestions": [
+                {
+                  "id": "eq-1-1-1",
+                  "question": "如果你有2个苹果，又得到1个苹果，一共有几个苹果？",
+                  "hint": "可以用手指来帮助计算",
+                  "difficulty": "medium",
+                  "tags": ["addition", "thinking"]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  njxx-frontend:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./src:/app/src
+    depends_on:
+      - njxx-backend
+
+  njxx-backend:
+    build: .
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=production
+      - MONGODB_URI=mongodb://njxx-db:27017/njxx
+    depends_on:
+      - njxx-db
+
+  njxx-db:
+    image: mongo:5.0
+    ports:
+      - "27017:27017"
+    volumes:
+      - njxx-db-data:/data/db
+
+volumes:
+  njxx-db-data:
